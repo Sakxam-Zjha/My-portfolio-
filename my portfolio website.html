@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saksham Jha | Professional Portfolio</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body { font-family: 'Poppins', sans-serif; background: #f5f7fa; color: #1f2937; }
+
+    .gradient-text {
+      background: linear-gradient(90deg,#3b82f6,#06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+    }
+
+    .fade-in { animation: fadeIn 1.2s ease-in; }
+    @keyframes fadeIn { from { opacity:0; transform: translateY(15px); } to { opacity:1; transform: translateY(0); } }
+
+    .hover-scale:hover { transform: scale(1.05); transition: 0.3s; }
+    .box { background: #e0f2fe; border-radius: 12px; padding: 20px; transition: 0.3s; }
+    .box:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+    .typing { border-right: 2px solid #3b82f6; white-space: nowrap; overflow: hidden; width: 0; animation: typing 4s steps(30,end) forwards, blink 0.6s infinite; }
+    @keyframes typing { from { width:0 } to { width:100% } }
+    @keyframes blink { 50% { border-color: transparent } }
+
+    .hero { text-align: center; padding: 80px 20px; }
+    .hero img { width: 200px; height: 200px; border-radius: 50%; border: 4px solid #3b82f6; }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-6 fade-in bg-white shadow-md">
+    <h1 class="text-2xl font-bold gradient-text">Saksham Jha</h1>
+    <div class="space-x-6 text-gray-700">
+      <a href="#about" class="hover:text-blue-500">About</a>
+      <a href="#skills" class="hover:text-blue-500">Skills</a>
+      <a href="#projects" class="hover:text-blue-500">Projects</a>
+      <a href="#contact" class="hover:text-blue-500">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero fade-in">
+    <img src="C:\Users\054213824\Downloads\sakxam.JPG" alt="Avatar">
+    <h2 class="text-5xl font-bold gradient-text mt-6">Hey, I'm Saksham</h2>
+    <p class="typing mt-4 text-blue-500 text-xl">Developer • Creator • Explorer</p>
+    <p class="mt-4 text-gray-700 max-w-2xl mx-auto text-lg">
+      17-year-old Computer Science student from Nepal 🇳🇵. Skilled in C, C++, HTML, CSS.
+      Passionate about content creation, coding, editing, and exploring new ideas.
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6 max-w-4xl mx-auto fade-in">
+    <h2 class="text-4xl mb-6 gradient-text">About Me</h2>
+    <p class="text-gray-700 text-lg">
+      I love coding, content creation, editing, singing, and studying.
+      I push myself to learn, grow, and create extraordinary projects.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-4xl mb-8 gradient-text">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="box hover-scale text-center font-semibold">C</div>
+      <div class="box hover-scale text-center font-semibold">C++</div>
+      <div class="box hover-scale text-center font-semibold">HTML</div>
+      <div class="box hover-scale text-center font-semibold">CSS</div>
+      <div class="box hover-scale text-center font-semibold">Editing</div>
+      <div class="box hover-scale text-center font-semibold">Content Creation</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-4xl mb-8 gradient-text">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="box hover-scale p-6">
+        <h3 class="text-2xl font-bold mb-2">Basic Website</h3>
+        <p class="text-gray-700">Responsive HTML & CSS website built from scratch.</p>
+      </div>
+      <div class="box hover-scale p-6">
+        <h3 class="text-2xl font-bold mb-2">Content Creation</h3>
+        <p class="text-gray-700">Creative editing, reels, and social media content.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 text-center">
+    <h2 class="text-4xl gradient-text mb-4">Contact Me</h2>
+    <p class="text-gray-700 text-lg">Let's create something great together ⚡</p>
+  </section>
+
+  <footer class="text-center p-6 text-gray-500">
+    © 2026 Saksham Jha
+  </footer>
+
+</body>
+</html>
